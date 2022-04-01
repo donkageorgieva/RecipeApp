@@ -8,10 +8,20 @@ import { RecipeItemComponent } from './recipe-book/recipe-list/recipe-item/recip
 import { RecipeDetailsComponent } from './recipe-book/recipe-details/recipe-details.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, RecipeBookComponent, RecipeListComponent, RecipeItemComponent, RecipeDetailsComponent, ShoppingListComponent, ShoppingListEditComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    RecipeBookComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeDetailsComponent,
+    ShoppingListComponent,
+    ShoppingListEditComponent,
+  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
