@@ -7,10 +7,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() newActiveLink = new EventEmitter<string>();
-
+  openDropdown: boolean = false;
   onNavigate(link: string) {
     this.newActiveLink.emit(link);
   }
+
   constructor() {}
 
   ngOnInit(): void {}
